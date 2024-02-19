@@ -1,13 +1,19 @@
 :root {
-    --primaryColor: black;
+    --primaryColor: #F53855;
     --secondaryColor: white;
     --backgroundColor: blue;
     --hoverColor:skyblue;
     --darkModeColor: black;
 }
 
-.dark {
+/* .dark {
     --primaryColor: white;
     --secondaryColor: black;
     --darkModeColor: yellow;
-}
+} */
+
+/* :root {
+    --primary-color: #F53855;
+    --title-color: #0B132A;
+    --desc-color: #4F5665;
+} */

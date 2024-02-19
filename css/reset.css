@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -45,8 +47,24 @@ button {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .show__back-top {
     display: flex;
 }
+
+.title {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: Rubik;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: Rubik;
+}
+

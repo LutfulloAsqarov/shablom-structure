@@ -24,14 +24,18 @@ body {
     color: var(--primaryColor);
 }
 
+.header__nav__right__list {
+    gap: 30px;
+}
+
 
 .header__nav__right,
-.header__nav__right__list,
 .header__nav__right__btns {
     gap: 20px;
 }
 
 .header__nav__right__list__item {
+    font-family: Rubik;
     font-size: 18px;
     font-weight: 600;
     padding: 5px 0px;
@@ -39,7 +43,7 @@ body {
     border-top: 1px solid transparent;
     position: relative;
     transition: 0.3s;
-    color: var(--primaryColor);
+    /* color: var(--primaryColor); */
 }
 
 .header__nav__right__list__item::after {
@@ -68,13 +72,13 @@ body {
 }
 
 .header__nav__right__list__item:hover {
-    color:var(--hoverColor);
+    color:var(--primaryColor);
 }
 
 .header__nav__right__list__item:hover::after,
 .header__nav__right__list__item:hover::before {
     width: 50%;
-    background: var(--hoverColor);
+    background: var(--primaryColor);
 }
 
 .header__nav__right__list__close {
@@ -86,9 +90,21 @@ body {
     display: none;
 }
 
+.header__nav__right__btns__sign-in {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    transition: .3s;
+}
 
-.header__nav__right__btns__contact {
-    padding: 6px 13px;
+.header__nav__right__btns__sign-in:hover {
+    color: var(--primaryColor);
+}
+
+
+.header__nav__right__btns__sign-up {
+    padding: 13px 45px;
     border: 2px solid var(--primaryColor);
     background-color: transparent;
     border-radius: 2px;
@@ -96,6 +112,12 @@ body {
     font-weight: 600;
     transition: 0.3s;
     color: var(--primaryColor);
+    border-radius: 50px;
+}
+
+.header__nav__right__btns__sign-up:hover {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
 
 .header__nav__right__btns__contact:hover {
