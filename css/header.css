@@ -1,0 +1,163 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.show-navshrink {
+    box-shadow: 0px 0px 10px skyblue;
+    background: #fff;
+}
+
+.header__nav-logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__nav-right,
+.header__nav-btns {
+    gap: 20px;
+}
+
+.header__nav-list {
+    gap: 6px;
+}
+
+.header__nav-item {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover {
+    color: orange;
+}
+
+.header__nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.header__nav-item::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover::after {
+    width: 100%;
+    background: orange;
+}
+
+.header__nav-item:hover::before {
+    width: 100%;
+    background: orange;
+}
+
+.nav__right-border {
+    position: absolute;
+    width: 2.5px;
+    height: 0%;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover .nav__right-border {
+    height: 100%;
+    background: orange;
+}
+
+.nav__left-border {
+    position: absolute;
+    width: 2.5px;
+    height: 0%;
+    left: 0;
+    top: 0;
+    background: #000;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover .nav__left-border {
+    height: 100%;
+    background: orange;
+}
+
+.header__nav__contact-btn {
+    padding: 6px 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.header__nav__contact-btn:hover {
+    border-color: orange;
+    color: orange;
+}
+
+.header__nav__hamburger-btn {
+    border: none;
+    background: transparent;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__nav__hamburger-btn span {
+    width: 20px;
+    height: 2.5px;
+    border-radius: 2px;
+    background: black;
+}
+
+@media (max-width: 650px) {
+    .header__nav-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        box-shadow: 0px 0px 15px skyblue;
+        transition: 0.3s;
+    }
+
+    .header__nav-item::after {
+        height: 2px;
+    }
+
+    .header__nav__hamburger-btn {
+        display: flex;
+    }
+
+    .show-header__nav-list {
+        left: 0;
+    }
+}
+
+main {
+    padding-top: 100px;
+}
