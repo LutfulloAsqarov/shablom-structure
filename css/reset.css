@@ -21,14 +21,9 @@ button {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-}
-
-@media (min-width: 1440px) {
-    .container {
-        width: 1140px;
-    }
+    max-width: 1440px;
 }
 
 .df {
@@ -37,17 +32,21 @@ button {
     align-items: center;
 }
 
-#backtop {
+.back-top {
     position: fixed;
-    bottom: 50px;
-    right: 30px;
-    background-color: skyblue;
-    padding: 10px;
-    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    bottom: 20px;
+    right: 20px;
+    background: var(--backgroundColor);
     border-radius: 50%;
+    color: var(--secondaryColor);
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.show-backtop {
-    display: block !important;
+.show__back-top {
+    display: flex;
 }
